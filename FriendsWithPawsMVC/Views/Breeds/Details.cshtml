@@ -1,0 +1,50 @@
+﻿@model FriendsWithPawsMVC.Models.Breed
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Breed</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Specie.SpecieName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Specie.SpecieName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BreedName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BreedName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FoodCostPerKG)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FoodCostPerKG)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.HousingCost)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.HousingCost)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.BreedID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
